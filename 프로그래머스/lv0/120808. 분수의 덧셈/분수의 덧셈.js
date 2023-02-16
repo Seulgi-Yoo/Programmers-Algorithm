@@ -5,6 +5,6 @@ function solution(numer1, denom1, numer2, denom2) {
     const 분모 = denom1 * denom2
     // 최대공약수 구하기
     const getGCD = (a, b) => (b === 0 ? a : getGCD(b, a % b));
-    const 최대공약수 = getGCD(분모, 분자);
+    const 최대공약수 = getGCD(분자, 분모);
     return [분자/최대공약수, 분모/최대공약수];
 }
